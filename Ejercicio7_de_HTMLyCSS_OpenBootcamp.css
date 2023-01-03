@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,300;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    background-color: #161717;
+}
+
+h3 {
+    color: white;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+}
+
+.buttons {
+    align-self: flex-start;/*Sirve para poner todo ala izquierda*/
+    display: flex;
+    gap: 20px;
+}
+
+.google-btn {
+    background-color: #1A73E8;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer; /*Sirve para poner el cursor de la manito*/
+}
+
+.google-btn:hover {
+    opacity: 0.75;
+}
+
+.google-btn picture {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center; /*Esto centra verticalmente en el eje de las y*/
+    align-items: center; /*Este centra horizontalmente en el eje de las x*/
+}
+
+.google-btn picture img {
+    width: 75%;
+}
+
+.google-btn span {
+    color: white;
+    padding: 15px;
+    font-weight: 500;/*Sirve para llamar a una de las fuentes que importamos*/
+}
+
+.twitter-btn {
+    color: #bbb;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.twitter-btn:hover {
+    background-color: #ddd;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+.section-inputs {
+    display: flex;
+    gap:15px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    color: white;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span {
+    font-weight: 700;
+}
+
+.section-inputs label input {   
+    width: 80%;
+    background-color: #f3f3f4;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 14pt;
+    background-color: #212121;
+}
+
+label input {   
+    width: 90%;
+    background-color: #f3f3f4;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+    background-color: #212121;
+    color: white;
+}
+
+label input:hover {
+    background-color: #454045;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 10px rgb(226, 150, 226);
+}
+
+label input:focus {
+    background-color: #454045;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 10px rgb(226, 150, 226);
+}
+
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+}
+
+.checkbox-label span {
+    font-weight: 500;
+}
+
+.submit-btn {
+    background-color: #EA4C89;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: 0.85;
+}
